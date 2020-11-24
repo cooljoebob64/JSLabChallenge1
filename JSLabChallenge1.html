@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Lab Challenge 1</title>
+
+	<script type="text/javascript" src="JSLabChallengeJS.js"></script>
+</head>
+<body>
+
+	<p>How many cups of coffee have you had?</p>
+	<p id="numcups">5</p>
+	<button id="cupsless" onclick="let cupnum = document.getElementById('numcups'); cupnum.innerHTML = parseFloat(cupnum.innerHTML)-1; calculate()">-</button>
+	<button id="cupsmore" onclick="let cupnum = document.getElementById('numcups'); cupnum.innerHTML = parseFloat(cupnum.innerHTML)+1; calculate()">+</button>
+
+	<p>Do you need more coffee?</p>
+	<p id="cupanswer">Waiting for an answer...</p>
+
+	<p>How many miles since your last oil change?</p>
+	<p id="nummiles">500</p>
+	<button id="milesless" onclick="let milenum = document.getElementById('nummiles'); milenum.innerHTML = parseFloat(milenum.innerHTML)-1; calculate()">-</button>
+	<button id="milesmore" onclick="let milenum = document.getElementById('nummiles'); milenum.innerHTML = parseFloat(milenum.innerHTML)+1; calculate()">+</button>
+
+	<p>Do you need an oil change?</p>
+	<p id="oilanswer">Waiting for an answer...</p>
+
+	<script>calculate()</script>
+
+</body>
+</html>
